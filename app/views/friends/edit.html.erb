@@ -2,5 +2,7 @@
 
 <%= render 'form', friend: @friend %>
 
-<%= link_to 'Show', @friend %> |
-<%= link_to 'Back', friends_path %>
+<div class="lead" style="margin-left: 1%; margin-top:23px">
+  <%= link_to 'Show', @friend, class:"btn btn-dark" %>
+  <%= link_to 'Back', friends_path, class:"btn btn-dark" %>
+</div>

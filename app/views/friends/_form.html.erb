@@ -11,32 +11,32 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field form-group" style="margin-left: 1%; width: 50%; justify: center; align:center">
     <%= form.label :first_name %>
-    <%= form.text_field :first_name %>
+    <%= form.text_field :first_name, class:"form-control", placeholder:"first_name" %>
   </div>
 
-  <div class="field">
+  <div class="field form-group" style="margin-left: 1%; width: 50%; justify: center; align:center">
     <%= form.label :last_name %>
-    <%= form.text_field :last_name %>
+    <%= form.text_field :last_name, class:"form-control", placeholder:"last_name" %>
   </div>
 
-  <div class="field">
+  <div class="field form-group" style="margin-left: 1%; width: 50%; justify: center; align:center">
     <%= form.label :email %>
-    <%= form.text_field :email %>
+    <%= form.text_field :email, class:"form-control", placeholder:"email" %>
   </div>
 
-  <div class="field">
+  <div class="field form-group" style="margin-left: 1%; width: 50%; justify: center; align:center">
     <%= form.label :phone %>
-    <%= form.text_field :phone %>
+    <%= form.text_field :phone, class:"form-control", placeholder:"phone" %>
   </div>
 
-  <div class="field">
+  <div class="field form-group" style="margin-left: 1%; width: 50%; justify: center; align:center">
     <%= form.label :twitter %>
-    <%= form.text_field :twitter %>
+    <%= form.text_field :twitter, class:"form-control", placeholder:"twitter" %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div style="margin-left: 1%; margin-top:23px">
+    <%= form.submit class:"btn btn-dark btn-lg" %>
   </div>
 <% end %>
