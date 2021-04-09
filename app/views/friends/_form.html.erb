@@ -36,6 +36,16 @@
     <%= form.text_field :twitter, class:"form-control", placeholder:"twitter" %>
   </div>
 
+  <div class="field form-group" style="margin-left: 1%; width: 50%; justify: center; align:center">
+    <%= form.label :user_id %>
+    <%= form.number_field :user_id, 
+      id: :friend_user_id, 
+      class:"form-control", 
+      value:current_user.id, 
+      type: :hidden 
+    %>
+  </div>
+
   <div style="margin-left: 1%; margin-top:23px">
     <%= form.submit class:"btn btn-dark btn-lg" %>
   </div>
